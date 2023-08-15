@@ -5,9 +5,11 @@ import {SetCoords} from "../../Core/Store/Reducers/MapReducer";
 import useBmap from "./hooks/useBmap";
 import { Form } from 'antd';
 import { OpenStreetMapProvider, SearchControl } from 'leaflet-geosearch';
+import { useWindowSize } from 'usehooks-ts';
 
 const Bmap = () => {
     const getCoords = useAppSelector(state=>state.MapReducer.latlng);
+    const {width}=useWindowSize()
     const SearchField = () => {
 		const searchControl = new (SearchControl as any)({
 			provider: new OpenStreetMapProvider({
@@ -17,6 +19,7 @@ const Bmap = () => {
 					addressdetails:1, // include additional address detail parts
 				},
 			}),
+            style:width>575?'bars':'bar',
 			showMarker: false,
 			showPopup: true,
 			autoClose: true,
