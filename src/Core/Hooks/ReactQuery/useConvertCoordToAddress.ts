@@ -3,8 +3,11 @@ import customAxios from "../../Services/Axios/CustomAxios";
 import useMutationHook from "./Master/useMutationHook";
 import { UseMutationResult } from "@tanstack/react-query";
 import IconvertAddress from "../../Types/IconvertAddress";
+import { useAppDispatch } from "../../Store/store";
+import { CoordsAddressData } from "../../Store/Reducers/MapReducer";
 
 const useConvertCoordToAddress = () => {
+  const dispatch = useAppDispatch();
   const config = {
     headers: {
       "x-api-key": process.env.REACT_APP_MAPIR_TOKEN,
@@ -21,8 +24,8 @@ const useConvertCoordToAddress = () => {
         .then((res) => res.data);
     },
     {
-      onSuccess: (res) => {
-        console.log(res);
+      onSuccess: (res:any) => {        
+        dispatch(CoordsAddressData({address:res.address,city:res.city}))
       },
     }
   ) as UseMutationResult<IconvertAddress>;

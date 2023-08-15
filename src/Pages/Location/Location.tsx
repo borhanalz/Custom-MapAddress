@@ -1,10 +1,10 @@
 import React from 'react';
-import Bmap from "../../Components/Map/Components/Bmap";
+import BmapAll from '../../Components/Map/BmapAll';
 
 const Location = () => {
     return (
         <div>
-            <Bmap/>
+            <BmapAll/>
         </div>
     );
 };

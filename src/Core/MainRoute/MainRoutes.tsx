@@ -24,14 +24,14 @@ const MainRoutes = () => {
 
     return (
         <>
-            {/*<Routes>*/}
-            {/*    {AuthenticateStatus ?  privateRoute?.map((route)=>{*/}
-            {/*        return <Route key={route.path} path={route.path} element={route.element}></Route>*/}
-            {/*    }): publicRoute?.map((route)=>{*/}
-            {/*        return <Route key={route.path} path={route.path} element={route.element}></Route>*/}
-            {/*    })}*/}
-            {/*</Routes>*/}
-            <Location/>
+            <Routes>
+               {AuthenticateStatus ?  privateRoute?.map((route)=>{
+                   return <Route key={route.path} path={route.path} element={route.element}></Route>
+             }): publicRoute?.map((route)=>{
+                   return <Route key={route.path} path={route.path} element={route.element}></Route>
+             })}
+            </Routes>
+            {/* <Location/> */}
         </>
     );
 };
