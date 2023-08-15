@@ -1,0 +1,9 @@
+
+Qtypescript:S1128")Remove this unused import of 'useEffect'.(Á¦ĞÕüÿÿÿÿ8ó®ö–Ÿ1
+Mtypescript:S1128"%Remove this unused import of 'Route'.(¹ş¨Öùÿÿÿÿ8õœ–™Ÿ1
+Ntypescript:S1128"&Remove this unused import of 'Routes'.(¹ş¨Öùÿÿÿÿ8õœ–™Ÿ1
+Ntypescript:S1128"+Remove this unused import of 'useSelector'.(Ê Ş¬8ô®ö–Ÿ1
+btypescript:S1854
+"@Remove this useless assignment to variable "AuthenticateStatus".(ˆ²ñy8õœ–™Ÿ1
+[typescript:S1854"9Remove this useless assignment to variable "publicRoute".(×ğ’8õœ–™Ÿ1
+]typescript:S1854":Remove this useless assignment to variable "privateRoute".(²ÄÌ8öœ–™Ÿ1

@@ -1,0 +1,6 @@
+@import "../colors/colors";
+
+.button_antd:hover {
+  border-color:$primary_one !important;
+  color:#fff !important;
+}

@@ -1,10 +1,25 @@
 @import "./css/Colors/colors";
+@import "./css/Antd/antdcss";
+@import './css/Leaflet/Leafletcss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: ba_kalame;
+  src: url("./fonts/Kalameh-Medium.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
+  bottom: 0;
+  font-family: ba_kalame;
+}
+.rtl_dir {
+  direction: rtl;
+}
+.ltr_dir {
+  direction:ltr;
 }
 
