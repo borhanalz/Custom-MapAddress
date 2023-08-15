@@ -1,5 +1,5 @@
 import React from 'react';
-import Bmap from "../../Components/Map/Bmap";
+import Bmap from "../../Components/Map/Components/Bmap";
 
 const Location = () => {
     return (

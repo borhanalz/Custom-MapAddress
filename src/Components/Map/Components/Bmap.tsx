@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { MapContainer, TileLayer, useMap,Marker,Popup } from 'react-leaflet'
-import {useAppDispatch, useAppSelector} from "../../Core/Store/store";
-import {SetCoords} from "../../Core/Store/Reducers/MapReducer";
-import useBmap from "./hooks/useBmap";
+import {useAppDispatch, useAppSelector} from "../../../Core/Store/store";
+import {SetCoords} from "../../../Core/Store/Reducers/MapReducer";
+import useBmap from "../hooks/useBmap";
 
 const Bmap = () => {
     const getCoords = useAppSelector(state=>state.MapReducer.latlng);
